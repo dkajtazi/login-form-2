@@ -1,0 +1,130 @@
+*{
+    font-family: sans-serif;
+}
+html,body{
+    margin: 0;
+    background-color: black;
+}
+.container{
+    height: 100%;
+    text-align: center;
+}
+.celonisLogo{
+    width: 100px;
+}
+.loginAndInformationBlocks{
+    height: 100%;
+    display: block;
+    margin-top: 50px;
+    text-align: initial;
+}
+.signInForm{
+    width: 90%;
+    max-width: 500px;
+    min-height: fit-content;
+    background-color: #fff;
+    box-shadow: 0 4px 42px 4px rgba(0, 0, 0, 19%);
+    box-sizing: border-box;
+    padding:50px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+}
+.informationBlock{
+    background-color: black;
+    color: white;
+    border:1px solid white;
+    line-height: 1.3;
+}
+.signInForm h2{
+    margin-top: 0;
+}
+.informationBlock h2{
+    font-size: 26px;
+}
+.informationBlock p{
+    font-weight: 100;
+}
+.textAlignCenter{
+    text-align: center;
+}
+.textAndInput p{
+}
+.textAndInput input{
+    box-sizing: border-box;
+    width: 100%;
+    height: 35px;
+    background-color: #f5f6f6;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-size: 18px;
+    border: 1px solid black;
+    outline: none;
+}
+.textAndInput input:focus{
+    border-color: #3636ff;
+}
+.signInButton{
+    display: flex;
+    flex-direction: column-reverse;
+
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    text-align: center;
+}
+.signInButton a:first-child{
+    margin-top: 30px;
+    color: #3636ff;
+    text-decoration-line:none;
+}
+.signInButton a:nth-child(2){
+    background-color: #3636ff;
+    font-size: 14px;
+    padding: 8px 35px;
+    color: white;
+    text-decoration-line:none;
+}
+.signUpText{
+    text-align: center;
+    margin-top: 30px;
+}
+.signUpText a{
+    text-decoration-line:none;
+}
+.informationButton{
+    margin-top: 70px;
+}
+.informationButton a{
+    background-color: #5cfe50;
+    padding: 15px 30px;
+    color: black;
+    text-decoration-line:none;
+    border-radius: 50px;
+}
+@media only screen and (min-width: 769px) {
+    html,body{
+        height: 100%;
+    }
+    .loginAndInformationBlocks{
+        height: unset;
+        display: flex;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .signInForm{
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-bottom: 0;
+    }
+    .signInButton{
+        display: flex;
+        flex-direction: row;
+    }
+    .signInButton a:first-child{
+        margin-top: 0px;
+    }
+    .signUpText{
+        margin-top: 50px;
+    }
+}
