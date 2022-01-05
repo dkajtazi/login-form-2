@@ -51,8 +51,15 @@ html,body{
 .textAlignCenter{
     text-align: center;
 }
-.textAndInput p{
+
+.textAndInput:focus-within p {
+    color:#3636ff;
 }
+
+.textAndInput:focus-within input {
+    border-color: #3636ff;
+}
+
 .textAndInput input{
     box-sizing: border-box;
     width: 100%;
@@ -64,9 +71,7 @@ html,body{
     border: 1px solid black;
     outline: none;
 }
-.textAndInput input:focus{
-    border-color: #3636ff;
-}
+
 .signInButton{
     display: flex;
     flex-direction: column-reverse;
